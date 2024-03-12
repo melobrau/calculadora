@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 0 0px 10px rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(270deg, #860c7c, #1725a1);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+}
+
+.grid-container > button {
+  cursor: pointer;
+  transition-duration: 0.2s;
+  font-size: 2rem;
+  border:none;
+  background-color: black;
+  color: aliceblue;
+}
+
+.grid-container > button:hover {
+  background-color: #0e3f5c;
+  color: white;
+}
+
+.grid-container > .operator {
+  background: linear-gradient(113deg, #ff00f5, #00449c);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 83% 0%;
+  }
+  50% {
+    background-position: 18% 100%;
+  }
+  100% {
+    background-position: 83% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 83% 0%;
+  }
+  50% {
+    background-position: 18% 100%;
+  }
+  100% {
+    background-position: 83% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 83% 0%;
+  }
+  50% {
+    background-position: 18% 100%;
+  }
+  100% {
+    background-position: 83% 0%;
+  }
+}
+
+.grid-container > .operator > .operator:hover {
+  background-color: #0e3f5c;
+  color: white;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.grid-container > .output {
+  justify-content: right;
+  align-self:normal;
+  font-size: 2.5em;
+  grid-column: 1/-1;
+  background: linear-gradient(175deg, #082720, #08161d);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+.grid-container > .output > .current-operand{
+  margin: auto;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 47% 0%;
+  }
+  50% {
+    background-position: 54% 100%;
+  }
+  100% {
+    background-position: 47% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 47% 0%;
+  }
+  50% {
+    background-position: 54% 100%;
+  }
+  100% {
+    background-position: 47% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 47% 0%;
+  }
+  50% {
+    background-position: 54% 100%;
+  }
+  100% {
+    background-position: 47% 0%;
+  }
+}
+
+.grid-container > .output {
+  color: rgb(255, 255, 255);
+}
